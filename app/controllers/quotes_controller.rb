@@ -5,10 +5,14 @@ class QuotesController < ApplicationController
   def new
     @quote = Quote.new
   end
-  def create
-    Quote.create(quote_params)
-    redirect_to root_path
+def create
+  @quote = Quote.create(quote_params)
+  if @quote.invalid?
+    flash[:error] = '<strong>Could not save.</strong> The data you entered is invalid.<br />
+    Your note must be between 3 and 140 characters, and your name must be between 3 and 50 characters.'
   end
+  redirect_to root_path
+end
 
   private
 
