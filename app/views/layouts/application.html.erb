@@ -13,15 +13,14 @@
       <div class="col-3">
         <div class="circle">
           <br />
-          QUOTES
+          LOVE
           <br />
-          TO AMUSE
+          NOTES
           <br />
-          SOME
         </div>
       </div>
       <div class="col-4 slogan">
-        Random quotes for your entertainment
+        Messages for your tender heart
       </div>
       <div class="col-5 links">
         <%= link_to 'Contribute', '#' %>
@@ -33,6 +32,24 @@
 
     <br class="clear" />
 
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "Show me another love note!", "#", class: 'next-quote' %>
+          </div>
+          <div class="col-6 footer-blurb">
+            Proudly built with RF and love by <a href="http://www.melsencarlsburg.com/firehose/portfolio">Melsen Carlsburg</a><br />
+            Want to build your own web app? <a href="http://thefirehoseproject.com">Learn how to code here!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </body>
 </html>

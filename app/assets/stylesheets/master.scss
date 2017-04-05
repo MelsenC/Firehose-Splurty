@@ -15,9 +15,10 @@
     height: 80px;
     margin: 10px 10px;
     text-align: center;
+    vertical-align: middle;
     color: #FFF;
-    font-size: 10px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 18px;
     cursor: pointer;
     transform:rotate(345deg);
     -ms-transform:rotate(11deg); /* IE 9 */
@@ -53,8 +54,23 @@ h1 {
   font-family: 'vollkornsemibold_italic', serif;
   font-weight: semibold;
   font-size: 48px;
+  font-style: italic;
 }
 
 h2 {
   font-family: 'vollkornregular', serif;
+}
+
+.next-quote {
+  color: #f84342;
+  font-family: 'vollkornsemibold_italic', serif;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.footer-blurb {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+  text-align: right;
+  font-size: 15px;
 }
