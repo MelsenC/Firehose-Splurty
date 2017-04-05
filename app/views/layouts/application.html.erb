@@ -12,18 +12,20 @@
     <header class="row">
       <div class="col-3">
         <div class="circle">
-          <br />
-          LOVE
-          <br />
-          NOTES
-          <br />
+          <%= link_to root_path, class: 'logo' do %>
+            <br />
+            LOVE
+            <br />
+            NOTES
+            <br />
+          <% end %>
         </div>
       </div>
       <div class="col-4 slogan">
         Messages for your tender heart
       </div>
       <div class="col-5 links">
-        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'Contribute', new_quote_path %>
         <%= link_to 'About', '#' %>
       </div>
     </header>
@@ -40,7 +42,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <%= link_to "Show me another love note!", "#", class: 'next-quote' %>
+            <%= link_to "Show me another love note!", root_path, class: 'next-quote' %>
           </div>
           <div class="col-6 footer-blurb">
             Proudly built with RF and love by <a href="http://www.melsencarlsburg.com/firehose/portfolio">Melsen Carlsburg</a><br />
