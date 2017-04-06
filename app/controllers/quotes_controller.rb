@@ -7,8 +7,8 @@ class QuotesController < ApplicationController
     @quote = Quote.create(quote_params)
     if @quote.invalid?
       flash[:error] = '<strong>Could not save.</strong> The data you entered is invalid.<br />
-      Your note must be between 3 and 140 characters,<br />
-      and your name must be between 3 and 50 characters.'
+      Your note must be between 3 and 200 characters,<br />
+      and your name must be between 3 and 80 characters.'
     end
     redirect_to root_path
   end
