@@ -21,15 +21,19 @@
           <% end %>
         </div>
       </div>
-      <div class="col col-sm-5 hidden-xs-down slogan">
+      <div class="col-5 hidden-xs-down slogan">
         Messages for your tender heart
       </div>
-      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
+      <div class="col-9 col-sm-4 offset-1 links">
+        <span class="float-right">
         <!-- Button trigger modal -->
         <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
         &nbsp;
         &nbsp;
         <%= link_to 'About', about_path %>
+        &nbsp;
+        &nbsp;
+        </span>
       </div>
     </header>
 
@@ -48,6 +52,7 @@
           <%= simple_form_for Quote.new do |f| %>
             <div class="modal-body">
               <%= f.input :saying, label: "What do you want your love note to say?", placeholder: "Example: You are loved." %>
+              <br />
               <%= f.input :author, label: "How do you want to sign this note?", placeholder: "(Your name)" %>
             </div>
             <div class="modal-footer">
